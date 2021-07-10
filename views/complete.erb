@@ -44,24 +44,24 @@
         <% mail_name = params['mail'] %>
         <% tel_name = params['tel'] %>
         <% content_name = params['content'] %>
-        <table width="100%" class="table mb-3">
-            <tr class="border-bottom mt-3">
+        <table class="table">
+            <tr>
               <th>会社名</th>
               <td><%= company_name %></td>
             </tr>
-            <tr class="border-bottom">
+            <tr>
               <th>氏名</th>
               <td><%= your_name %></td>
             </tr>
-            <tr class="border-bottom">
+            <tr>
               <th>メール</th>
               <td><%= mail_name %></td>
             </tr>
-            <tr class="border-bottom">
+            <tr>
               <th>電話番号</th>
               <td><%= tel_name %></td>
             </tr>
-            <tr class="border-bottom">
+            <tr>
               <th>内容</th>
               <td><%= content_name.gsub(/\r\n|\r|\n/, "<br>") %></td>
             </tr>
